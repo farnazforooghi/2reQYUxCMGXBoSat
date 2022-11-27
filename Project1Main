@@ -1,0 +1,17 @@
+
+
+#importing useful libraries/modules for this project
+import numpy as np 
+import pandas as pd
+import matplotlib as mpl
+import csv
+from sklearn.model_selection import train_test_split
+import random
+import seaborn as sb
+
+
+#Read data
+path = 'ACME-HappinessSurvey2020.csv'
+data = pd.read_csv(path)
+data.columns = ['Happiness Status' , 'Delivery-satisfaction' , 'Expectation-satisfaction' , 'order-satisfaction' , 'Price-satisfaction' , 'Courier-satisfaction','app-satisfaction' ]
+data.head()
